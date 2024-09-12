@@ -10,19 +10,21 @@
 }
 
 .main-header h1 {
-    font-size: xx-large;
+    font-size: 8vh;
     color: red;
     text-decoration: underline;
     text-shadow: 3px 3px black;
 }
 
 .main-header img {
+    width: 9vh;
     border: 3px solid rgb(255, 0, 0);
     border-radius: 100%;
     box-shadow: 4px 4px black;
     transition: 1s;
 }
-.main-header img:hover{
+
+.main-header img:hover {
     transform: scale(1.1);
     transition: 1s;
 }
@@ -39,24 +41,31 @@
 }
 
 .sub-header nav {
+    width: 100%;
+    height: 100%;
     gap: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     gap: 2vh;
 }
-
 .sub-header button {
+    height: 5vh;
+    width: 10vh;
     background-color: rgb(255, 0, 0);
-    font-size: larger;
     border-radius: 15%;
     border: 2px solid black;
     box-shadow: 5px 5px black;
     text-decoration: none;
     transition: 1s;
 }
+.sub-header p{
+    font-size: 3vh;
+}
 
 .sub-header button:hover {
+    cursor: pointer;
     color: rgb(255, 255, 255);
     transform: scale(1.1);
     transition: 0.3s;
@@ -89,12 +98,12 @@
 
 .main-content h2 {
     margin-top: 6vh;
-    font-size: xx-large;
+    font-size: 4vh;
     color: red;
 }
 
 .main-content p {
-    font-size: large;
+    font-size: 2vh;
     color: white;
 }
 
@@ -107,9 +116,17 @@
 
 .side-buttons {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.side-buttons a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -118,7 +135,7 @@
     border: 2px solid black;
     box-shadow: 5px 5px black;
     height: 10vh;
-    width: 40vh;
+    width: 75%;
     transition: 0.5s;
 }
 
@@ -148,5 +165,7 @@
 }
 
 .rodape p {
+    font-size: 2vh;
     color: rgb(255, 0, 0);
 }
+
